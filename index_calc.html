@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Coda+Caption&family=DM+Serif+Text:ital@1&family=Dancing+Script:wght@400;500;600;700&family=Inspiration&family=Lobster&family=Overpass:ital,wght@1,700&family=Pacifico&family=Permanent+Marker&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,100;1,300;1,500;1,900&family=Rubik+Bubbles&family=Russo+One&family=Secular+One&family=Yellowtail&family=Yeon+Sung&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="row">
+        <div class="col-4"></div>
+        <div id="outer"  class="col-4 mt-5 p-5">
+            
+            <div class="displayM">
+                <h2>CASIO</h2>
+                <div class="display"> <input type="text" name="" id="calcScreen"></div>
+                <div class="button"><button onclick="allClear()" style="color: aliceblue; background-color: rgb(98, 3, 7); border: 0px; border-radius: 1em; width: 100%; height: 4vw;" class="ac" >AC</button></div>
+            </div>
+            
+            <div class="table">
+                <table>
+                    <br>
+                    <tr>
+                        <td> <input type="button" onclick="displayContent(1)" value="1"> </td>
+                        <td> <input type="button" onclick="displayContent(2)" value="2"> </td>
+                        <td> <input type="button" onclick="displayContent(3)"  value="3"> </td>
+                        <td> <input type="button" onclick="displayContent('/')"  value="/"> </td>
+    
+    
+                    </tr>
+                    <tr>
+                        <td> <input type="button" onclick="displayContent(4)" value="4"> </td>
+                        <td> <input type="button" onclick="displayContent(5)" value="5"> </td>
+                        <td> <input type="button" onclick="displayContent(6)" value="6"> </td>
+                        <td> <input type="button" onclick="displayContent('-')" value="-"> </td>
+    
+    
+                    </tr>
+                    <tr>
+                        <td> <input type="button" onclick="displayContent(7)" value="7"> </td>
+                        <td> <input type="button" onclick="displayContent(8)" value="8"> </td>
+                        <td> <input type="button" onclick="displayContent(9)" value="9"> </td>
+                        <td> <input type="button" onclick="displayContent('+')" value="+"> </td>
+    
+                    </tr>
+                    <tr>
+                        <td> <input type="button" onclick="displayContent('.')"  value="."> </td>
+                        <td> <input type="button" onclick="displayContent(0)"  value="0"> </td>
+                        <td> <input style="background-color: rgb(77, 224, 140);" type="button" onclick="Resultof()" value="="> </td>
+                        <td> <input type="button" onclick="displayContent('*')"  value="X"> </td>
+    
+                    </tr>
+                    <tr>
+                     
+                    </tr>
+                </table>
+                <input type="button"  value="C" onclick="Clear()" name="" id="clear">
+            </div>
+        </div>
+        <div class="col-4"></div>
+    </div>
+</body>
+<!-- external js -->
+<script src="calc.js"></script>
+</html>
